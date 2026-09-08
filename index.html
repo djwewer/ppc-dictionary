@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PPC Glossary — тренажер термінів</title>
+<title>PPC Glossary Trainer — Вхід</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -15,8 +15,7 @@
   <span class="orb orb-3"></span>
 </div>
 
-<!-- LOGIN -->
-<section id="screen-login" class="screen active">
+<section class="page-center">
   <div class="login-card glass">
     <div class="logo">
       <span class="logo-mark">PPC</span>
@@ -40,88 +39,8 @@
   </div>
 </section>
 
-<!-- DASHBOARD -->
-<section id="screen-dashboard" class="screen">
-  <header class="app-header">
-    <div class="logo">
-      <span class="logo-mark">PPC</span>
-      <span class="logo-text">Glossary Trainer</span>
-    </div>
-    <div class="header-actions">
-      <span class="hello">Привіт, <strong id="welcome-name"></strong></span>
-      <button id="reset-progress-btn" class="btn btn-ghost">Скинути прогрес</button>
-      <button id="logout-btn" class="btn btn-ghost">Вийти</button>
-    </div>
-  </header>
-
-  <main class="container">
-    <div class="overall-card glass">
-      <div class="overall-head">
-        <h2>Загальний прогрес</h2>
-        <span id="overall-progress-text"></span>
-      </div>
-      <div class="bar big"><div id="overall-progress-bar" class="bar-fill" style="width:0%"></div></div>
-    </div>
-
-    <h2 class="section-title">Рівні вивчення</h2>
-    <div id="dashboard-levels" class="levels-grid"></div>
-  </main>
-</section>
-
-<!-- LEVEL VIEW -->
-<section id="screen-level" class="screen">
-  <header class="app-header">
-    <button id="back-to-dashboard" class="btn btn-ghost">← До рівнів</button>
-    <h2 id="level-title"></h2>
-    <span></span>
-  </header>
-  <main class="container">
-    <div class="mode-buttons">
-      <button id="start-study" class="btn btn-primary">🃏 Режим карток</button>
-      <button id="start-quiz" class="btn btn-secondary">📝 Режим тесту</button>
-    </div>
-    <div id="level-terms-list" class="term-list"></div>
-  </main>
-</section>
-
-<!-- STUDY (flashcards) -->
-<section id="screen-study" class="screen">
-  <header class="app-header">
-    <button id="study-back-btn" class="btn btn-ghost">← Назад</button>
-    <span id="study-progress-text" class="progress-text"></span>
-    <span></span>
-  </header>
-  <main class="container narrow">
-    <div id="study-card" class="flashcard">
-      <div class="flashcard-inner">
-        <div class="flashcard-face flashcard-front" id="study-front"></div>
-        <div class="flashcard-face flashcard-back" id="study-back"></div>
-      </div>
-    </div>
-    <p class="hint">Клікни на картку, щоб перевернути</p>
-    <div id="study-actions-know" class="study-actions">
-      <button id="dont-know-btn" class="btn btn-outline">Не знав 🤔</button>
-      <button id="know-btn" class="btn btn-primary">Знав це ✓</button>
-    </div>
-  </main>
-</section>
-
-<!-- QUIZ -->
-<section id="screen-quiz" class="screen">
-  <header class="app-header">
-    <button id="quiz-back-btn" class="btn btn-ghost">← Назад</button>
-    <span id="quiz-progress-text" class="progress-text"></span>
-    <span></span>
-  </header>
-  <main class="container narrow">
-    <h3 id="quiz-question" class="quiz-question"></h3>
-    <div id="quiz-options" class="quiz-options"></div>
-    <p id="quiz-feedback" class="quiz-feedback"></p>
-    <div id="quiz-score" class="score-card glass hidden"></div>
-  </main>
-</section>
-
 <script src="js/data.js"></script>
-<script src="js/app.js"></script>
+<script src="js/common.js"></script>
+<script src="js/login.js"></script>
 </body>
 </html>

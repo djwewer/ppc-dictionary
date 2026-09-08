@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PPC Glossary Trainer — Рівні</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="bg-orbs">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="app-header">
+  <div class="logo">
+    <span class="logo-mark">PPC</span>
+    <span class="logo-text">Glossary Trainer</span>
+  </div>
+  <div class="header-actions">
+    <span class="hello">Привіт, <strong id="welcome-name"></strong></span>
+    <button id="reset-progress-btn" class="btn btn-ghost">Скинути прогрес</button>
+    <button id="logout-btn" class="btn btn-ghost">Вийти</button>
+  </div>
+</header>
+
+<main class="container">
+  <div class="overall-card glass">
+    <div class="overall-head">
+      <h2>Загальний прогрес</h2>
+      <span id="overall-progress-text"></span>
+    </div>
+    <div class="bar big"><div id="overall-progress-bar" class="bar-fill" style="width:0%"></div></div>
+  </div>
+
+  <h2 class="section-title">Рівні вивчення</h2>
+  <div id="dashboard-levels" class="levels-grid"></div>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

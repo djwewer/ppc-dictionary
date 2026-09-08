@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>PPC Glossary Trainer — Картки</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="study-body">
+
+<div class="bg-orbs">
+  <span class="orb orb-1"></span>
+  <span class="orb orb-2"></span>
+  <span class="orb orb-3"></span>
+</div>
+
+<header class="app-header">
+  <a id="study-back-btn" href="#" class="btn btn-ghost">← Назад</a>
+  <span id="study-progress-text" class="progress-text"></span>
+  <span></span>
+</header>
+
+<main class="study-main">
+  <div id="study-card" class="flashcard flashcard-full">
+    <div class="flashcard-inner">
+      <div class="flashcard-face flashcard-front" id="study-front"></div>
+      <div class="flashcard-face flashcard-back" id="study-back"></div>
+    </div>
+  </div>
+  <p class="hint">Натисни на картку, щоб перевернути</p>
+  <div id="study-actions-know" class="study-actions">
+    <button id="dont-know-btn" class="btn btn-outline btn-big">Не знаю 🤔</button>
+    <button id="know-btn" class="btn btn-primary btn-big">Знаю ✓</button>
+  </div>
+</main>
+
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/study.js"></script>
+</body>
+</html>
